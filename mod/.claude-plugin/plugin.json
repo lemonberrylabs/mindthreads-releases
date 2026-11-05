@@ -1,0 +1,25 @@
+{
+  "name": "mindthreads",
+  "description": "Shows the Mindthreads thread this session is working on under the prompt, with keyboard thread management, and connects the Mindthreads MCP tools",
+  "author": { "name": "Lemonberry Labs" },
+  "homepage": "https://mindthreads.lemonberrylabs.com",
+  "types": "./types/index.d.ts",
+  "mcpServers": {
+    "mindthreads": { "type": "http", "url": "${user_config.url}" }
+  },
+  "userConfig": {
+    "url": {
+      "type": "string",
+      "title": "Mindthreads MCP URL",
+      "description": "The Mindthreads app's local MCP endpoint",
+      "default": "http://127.0.0.1:47821/mcp"
+    },
+    "resolveOn": {
+      "type": "string",
+      "title": "Resolve the session's thread",
+      "description": "When the thread the mod made for a session is completed: when the session ends in any way, on /clear only, or never",
+      "options": ["end", "clear", "never"],
+      "default": "end"
+    }
+  }
+}

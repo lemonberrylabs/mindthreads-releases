@@ -1,0 +1,13 @@
+{
+  "name": "mindthreads",
+  "owner": {
+    "name": "Lemonberry Labs"
+  },
+  "plugins": [
+    {
+      "name": "mindthreads",
+      "source": "./mod",
+      "description": "Shows the Mindthreads thread each Claude Code session is working on, and connects the Mindthreads MCP tools"
+    }
+  ]
+}
